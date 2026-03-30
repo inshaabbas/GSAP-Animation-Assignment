@@ -1,15 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- ======== CSS ======== -->
-    <title>GSAP Animation Assignment</title>
+    <title>GSAP Animation</title>
+    <!-- =============== Bootstrap CSS CDN =============== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- =============== GSAP Animation CDN =============== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- =============== Font Awesome CDN =============== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- =============== Google Fonts =============== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Heebo:wght@100..900&display=swap"
+        rel="stylesheet">
+    <!-- =============== External Stylesheet CSS =============== -->
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    
+    <!-- =============== Hero Section Start =============== -->
+    <section class="hero-sec">
+        <!-- Background floating circles -->
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+
+        <div class="container-xxl">
+            <div class="wrapper">
+                <!-- Left Content -->
+                <div class="left-content">
+                    <h1>Landing template for startups</h1>
+                    <p>Our landing page template works on all devices, so you only have to set it up once, and get
+                        beautiful
+                        results forever.</p>
+                    <form id="FormBox">
+                        <input type="email" placeholder="Your best email..." required>
+                        <button type="submit">EARLY ACCESS</button>
+                    </form>
+                </div>
+
+                <!-- Right Content -->
+                <div class="right-content">
+                    <!-- SVG Circle -->
+                    <div class="circle-container">
+                        <svg class="big-circle" viewBox="0 0 520 520">
+                            <circle cx="260" cy="260" r="230"></circle>
+                        </svg>
+
+                        <!-- Images -->
+                        <div class="imgWrapper">
+                            <img src="./assets/Hero-img.jfif" alt="Dashboard" class="hero-1">
+                            <img src="./assets/Hero-img-2.jfif" alt="Analytics" class="hero-2">
+                        </div>
+
+                        <!-- Icon Bubbles -->
+                        <div class="iconsWrapper">
+                            <div class="icon-div icon-1">😊</div>
+                            <div class="icon-div icon-2">🤞</div>
+                            <div class="icon-div icon-3">👍</div>
+                            <div class="icon-div icon-4">🤏</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============== Hero Section End =============== -->
 
 
+    <!-- =============== Meet Section Start ===============  -->
+    <div class="meet-section">
+        <div class="container-xxl">
+            <div class="headings">
+                <h2>Meet April</h2>
+                <p>Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or
+                    visual presentation.</p>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-icon">
+                            <i class="fa-brands fa-leanpub"></i>
+                        </div>
+                        <h5 class="card-title">Powerful</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore,
+                            obcaecati.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-icon" style="border: 10px solid #ffa99a;">
+                            <i class="fa-solid fa-mobile-screen" style="color: #ffa99a;"></i>
+                        </div>
+                        <h5 class="card-title">Powerful</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore,
+                            obcaecati.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-icon" style="border: 10px solid #55fae7;">
+                            <i class="fa-solid fa-arrows-to-circle" style="color: #55fae7;"></i>
+                        </div>
+                        <h5 class="card-title">Powerful</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore,
+                            obcaecati.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-icon" style="border: 10px solid #7b85f8;">
+                            <i class="fa-solid fa-chart-column" style="color: #7b85f8;"></i>
+                        </div>
+                        <h5 class="card-title">Powerful</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore,
+                            obcaecati.</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- =============== Meet Section End ===============  -->
+
+
+    <!-- =============== Testimonials Section Start ===============  -->
+    <section class="testimonials-section">
+        <div class="testimonials-container">
+
+            <div class="blue-circle-wrapper">
+                <svg class="blue-circle" viewBox="0 0 500 500">
+                    <circle cx="250" cy="250" r="230"></circle>
+                </svg>
+            </div>
+
+            <div class="testimonial-card testimonial-1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                <div class="username">@martajones</div>
+            </div>
+
+            <div class="testimonial-card testimonial-2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                <div class="username">@michealpahm</div>
+            </div>
+
+            <div class="testimonial-card testimonial-3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                <div class="username">@markbrown</div>
+            </div>
+
+            <!-- Profile Images -->
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Marta Jones" class="profile-img profile-1">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Micheal Pahm" class="profile-img profile-2">
+            <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Mark Brown" class="profile-img profile-3">
+
+            <!-- Decorative Shapes -->
+            <div class="deco-shape deco-pink"></div>
+            <div class="deco-shape deco-cyan"></div>
+            <div class="quote-mark">"</div>
+        </div>
+    </section>
+    <!-- =============== Testimonials Section End ===============  -->
+
+
+
+    <!-- =============== Footer Start ===============  -->
+    <footer>
+        <!-- Background Decorative Circle -->
+        <div class="footer-bg-circle"></div>
+
+        <div class="container-xxl">
+            <!-- CTA Section -->
+            <div class="footer-cta">
+                <h2>Stay in the know</h2>
+                <p>Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or
+                    visual presentation.</p>
+                <form class="footer-form">
+                    <input type="email" placeholder="Your best email..." required>
+                    <button type="submit">EARLY ACCESS</button>
+                </form>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <!-- Left Side -->
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <div class="footer-copyright">
+                        © 2018 April, all rights reserved
+                    </div>
+                </div>
+
+                <!-- Right Side -->
+                <div class="footer-right">
+                    <!-- Navigation Links -->
+                    <ul class="footer-links">
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#faq">FAQ's</a></li>
+                        <li><a href="#support">Support</a></li>
+                    </ul>
+
+                    <!-- Social Icons -->
+                    <div class="footer-social">
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Twitter">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Google">
+                            <i class="fa-brands fa-google"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- =============== Footer Start ===============  -->
+
+
+
+
+    <!-- =============== Bootstrap JS CDN =============== -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+
+
+    <!-- =============== GSAP Animation JS CDN =============== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+
+
+    <!-- =============== External JS =============== -->
     <script src="./index.js"></script>
 </body>
+
 </html>
